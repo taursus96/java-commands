@@ -4,7 +4,7 @@ public class StringIterator {
     private String content;
     private int contentLength;
     private int currentIndex = 0;
-    
+
     public StringIterator(String content) {
         this.content = content;
         this.contentLength = content.length();
@@ -15,16 +15,16 @@ public class StringIterator {
     }
 
     public char next() {
-        if(hasNext()) {
+        if (hasNext()) {
             return this.content.charAt(this.currentIndex++);
         }
-        
+
         throw new IndexOutOfBoundsException();
     }
 
     public void skipToNextNonWhiteChar() {
-        while(hasNext()) {
-            if(next() != ' ') {
+        while (hasNext()) {
+            if (next() != ' ') {
                 rewind();
                 return;
             }
@@ -32,9 +32,9 @@ public class StringIterator {
     }
 
     public void rewind() {
-        if(this.currentIndex > 0) {
+        if (this.currentIndex > 0) {
             this.currentIndex--;
         }
     }
-    
+
 }

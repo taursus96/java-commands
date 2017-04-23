@@ -14,7 +14,7 @@ public class CommandNameReadStrategy implements IReadStrategy {
 
     @Override
     public void before(StringIterator it) {
-        
+
     }
 
 }

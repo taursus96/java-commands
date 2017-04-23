@@ -14,7 +14,7 @@ public class CommandSkipToNextParamReadStrategy implements IReadStrategy {
 
     @Override
     public void before(StringIterator it) {
-        
+
     }
 
 }
